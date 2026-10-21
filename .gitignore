@@ -1,0 +1,21 @@
+# Build output, including exported test cases and failure reports
+target/
+
+# Signed releases are built locally and attached to GitHub Releases, never committed
+release/
+
+# Signing material must never enter Git
+*.p12
+*.pfx
+*.jks
+
+# Python virtual environment and caches
+.venv/
+__pycache__/
+*.pyc
+*$py.class
+
+# Editor files
+.vscode/
+.idea/
+*.iml
